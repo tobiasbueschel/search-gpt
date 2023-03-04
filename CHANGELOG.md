@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/tobiasbueschel/search-gpt/compare/v1.0.1...v1.1.0) (2023-03-04)
+
+
+### Features
+
+* improve console logs to provide context ([6e444a5](https://github.com/tobiasbueschel/search-gpt/commit/6e444a5ed4dd3b2d5467c106b16488d067f781a1))
+
+
+### Bug Fixes
+
+* start bin script with /usr/bin/env node ([df59012](https://github.com/tobiasbueschel/search-gpt/commit/df5901223f67bfc7220eef197e1ffa089d40f760))
+
 ## [1.0.1](https://github.com/tobiasbueschel/search-gpt/compare/v1.0.0...v1.0.1) (2023-03-04)
 
 
