@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/tobiasbueschel/search-gpt/compare/v1.0.0...v1.0.1) (2023-03-04)
+
+
+### Bug Fixes
+
+* remove hyphen from bin command and strict mode ([6fdfdec](https://github.com/tobiasbueschel/search-gpt/commit/6fdfdecc4ee781bac37abcfe616b44858269cc36))
+
 ## 1.0.0 (2023-03-04)
 
 
