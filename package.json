@@ -1,6 +1,6 @@
 {
   "name": "search-gpt",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Connecting the internet with ChatGPT",
   "license": "MIT",
   "repository": "https://github.com/tobiasbueschel/search-gpt",
