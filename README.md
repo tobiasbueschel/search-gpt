@@ -5,7 +5,7 @@
 	</a>
 	<h1>SearchGPT</h1>
 	<p>
-		<b>Connecting the internet with ChatGPT</b>
+		<b>Connecting ChatGPT with the Internet</b>
 	</p>
 	<br>
 	<br>
