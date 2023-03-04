@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/tobiasbueschel/search-gpt/compare/v1.1.0...v1.1.1) (2023-03-04)
+
+
+### Bug Fixes
+
+* correct bin command in readme & update demo ([6ba03ec](https://github.com/tobiasbueschel/search-gpt/commit/6ba03ece68a135bf57a1059eeb66de99728fdb8a))
+
 ## [1.1.0](https://github.com/tobiasbueschel/search-gpt/compare/v1.0.1...v1.1.0) (2023-03-04)
 
 
