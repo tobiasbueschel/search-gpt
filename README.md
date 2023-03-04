@@ -31,6 +31,9 @@ Alternatively, you can also run:
 
 ```sh
 npm install --global search-gpt
+
+# Run SearchGPT with this command
+searchgpt
 ```
 
 Ensure you have your own [Google Search API key](https://developers.google.com/custom-search/v1/introduction), [Programmable Search Engine](https://programmablesearchengine.google.com/controlpanel/all) and [OpenAI API key](https://platform.openai.com/) before running the CLI.
