@@ -50,6 +50,8 @@ async function startCli() {
 }
 
 async function searchGPT(userPrompt) {
+  process.stdout.write(chalk.dim("> Starting Google Search..."));
+
   previousChat = [
     {
       role: "system",
@@ -64,6 +66,9 @@ async function searchGPT(userPrompt) {
   const searchResults = await getGoogleSearchResults(userPrompt);
   const [firstpage, ...remainingPages] = searchResults.items;
   const urlToCheck = firstpage.link;
+
+  process.stdout.cursorTo(0);
+  process.stdout.write(chalk.dim(`> Checking: ${urlToCheck}`));
 
   // Fetch raw HTML of first page & get main content
   const htmlString = await fetch(urlToCheck);
@@ -98,8 +103,10 @@ async function searchGPT(userPrompt) {
   });
 
   const finalResponse = await getOpenAIChatCompletion(previousChat);
-  console.log(chalk.green("> ") + chalk.white(finalResponse));
 
+  process.stdout.clearLine(0);
+  process.stdout.cursorTo(0);
+  console.log("\n" + chalk.green("> ") + chalk.white(finalResponse));
   console.log(chalk.dim(`> Know more: ${urlToCheck}` + "\n"));
 
   return finalResponse;
