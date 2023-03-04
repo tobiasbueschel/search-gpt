@@ -9,7 +9,7 @@
     "url": "https://github.com/tobiasbueschel/search-gpt/issues"
   },
   "bin": {
-    "search-gpt": "index.js"
+    "searchgpt": "index.js"
   },
   "engines": {
     "node": ">=18"

@@ -1,4 +1,3 @@
-"use strict";
 import { compile } from "html-to-text";
 import readline from "readline";
 import chalk from "chalk";
