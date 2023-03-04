@@ -1,0 +1,32 @@
+{
+  "name": "search-gpt",
+  "version": "0.0.0",
+  "description": "Connecting the internet with ChatGPT",
+  "license": "MIT",
+  "repository": "https://github.com/tobiasbueschel/search-gpt",
+  "author": "https://github.com/tobiasbueschel",
+  "bugs": {
+    "url": "https://github.com/tobiasbueschel/search-gpt/issues"
+  },
+  "bin": {
+    "search-gpt": "index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
+  "keywords": [
+    "chatgpt",
+    "gpt3.5",
+    "google-search",
+    "cli",
+    "generativeai",
+    "llm"
+  ],
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "dotenv": "^16.0.3",
+    "html-to-text": "^9.0.4",
+    "node-fetch": "^3.3.0"
+  }
+}
