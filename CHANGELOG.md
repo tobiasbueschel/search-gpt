@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/tobiasbueschel/search-gpt/compare/v1.1.1...v1.1.2) (2023-03-26)
+
+
+### Bug Fixes
+
+* timeout if page can't be crawled ([8e48f80](https://github.com/tobiasbueschel/search-gpt/commit/8e48f808e615974b5cedd0f548c3861b851e5e81)), closes [#5](https://github.com/tobiasbueschel/search-gpt/issues/5)
+
 ## [1.1.1](https://github.com/tobiasbueschel/search-gpt/compare/v1.1.0...v1.1.1) (2023-03-04)
 
 
