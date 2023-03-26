@@ -53,6 +53,8 @@ flowchart LR
   E --> F[ChatGPT uses this context to provide an answer]
 ```
 
+Please note: the current implementation feeds Google Search results to `gpt-3.5-turbo` and does not include previous messages in subsequent queries to avoid surpassing the token limit.
+
 ## License
 
 This project is licensed under the [MIT license](./license).
