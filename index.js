@@ -3,6 +3,7 @@ import { compile } from "html-to-text";
 import readline from "readline";
 import chalk from "chalk";
 import fetch from "node-fetch";
+import { encode } from "gpt-3-encoder";
 import * as dotenv from "dotenv";
 dotenv.config();
 
@@ -69,7 +70,7 @@ async function searchGPT(userPrompt) {
     },
     {
       role: "user",
-      content: `With the information in the assistant's last message, answer this: ${userPrompt}`,
+      content: `With the information in the assistant's last message, answer this in the same language: ${userPrompt}`,
     },
   ];
 
@@ -129,13 +130,18 @@ async function getTextOfSearchResults(searchResults) {
       break;
     }
 
-    // Note: we must stay below the max token amount of OpenAI's API.
-    // Max token amount: 4096, 1 token ~= 4 chars in English
-    // Hence, we should roughly ensure we stay below 10,000 characters for the input
-    // and leave the remaining the tokens for the answer.
+    // We must stay below the max token amount of OpenAI's API.
+    // "Depending on the model used, requests can use up to 4096 tokens shared between prompt and completion"
+    // Therefore, the following will allow 3000 tokens for the prompt and the rest for the completion.
     // - https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them
     // - https://platform.openai.com/docs/api-reference/chat/create
-    context = context.substring(0, 10000);
+    // Note: the following encodes for GPT-3, hence, is only an approximation for other models.
+    const maxPromptTokenLength = 3000;
+    const encoded = encode(context);
+
+    if (encoded.length > maxPromptTokenLength) {
+      context = context.slice(0, maxPromptTokenLength);
+    }
 
     return [context, urlReference];
   } catch (error) {
