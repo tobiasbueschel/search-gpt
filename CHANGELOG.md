@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/tobiasbueschel/search-gpt/compare/v1.1.2...v1.2.0) (2023-04-11)
+
+
+### Features
+
+* integrate gpt-3-encoder for token count approximation ([c5aa3ca](https://github.com/tobiasbueschel/search-gpt/commit/c5aa3cac0f5dc054e50cfab48186a22cb3f00f87))
+
 ## [1.1.2](https://github.com/tobiasbueschel/search-gpt/compare/v1.1.1...v1.1.2) (2023-03-26)
 
 
